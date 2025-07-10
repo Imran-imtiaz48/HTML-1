@@ -1,29 +1,37 @@
 <!DOCTYPE html>
+<html lang="es">
 <head>
- <meta charset="ISO-8859-1" />
- <title>Empezando con html5</title>
- <link rel="stylesheet" type="text/css" href="botones.css" />
-      <!-- Las etiquetas <meta> proveen a los motores de busqueda  -->
-
-      <!-- la informaci�n que se usa para catalogar un sitio      -->
-      <meta name = "keywords" content = "web page, design,  
-         HTML5, tutorial, personal, help, index, form, 
-         contact, basic HTML5 feedback, list, links, lol, yolo">
-      <meta name = "description" content = "This website will 
-         help you learn the basics of HTML5 and web page design 
-         through the use of interactive examples and 
-         instruction.">
- </head>
- <body>
-<header> <h1>Creando men� circular para clase</h1>
-</header>
-<nav>
-	<ul class="circulos">
-		<li><a href="basicohtml5.html"><span>B�sico HTML5</span></a></li>
-		<li><a href="formhtml5.html"><span>Form HTML5</span></a></li>
-		<li><a href="stylehtml5.html"><span>Style HTML5</span></a></li>
-		<li><a href="#"><span>Contacto</span></a></li>
-	</ul>
-</nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Circular - HTML5</title>
+    <meta name="keywords" content="HTML5, diseño web, tutorial, menú circular, formularios, estilos">
+    <meta name="description" content="Sitio de demostración para crear un menú circular con HTML5 y CSS">
+    <link rel="stylesheet" type="text/css" href="botones.css">
+</head>
+<body>
+    <header role="banner">
+        <h1>Creando menú circular para clase</h1>
+        <p>Un ejemplo práctico de diseño de menú circular con HTML5 y CSS</p>
+    </header>
+    
+    <nav role="navigation" aria-label="Menú principal">
+        <ul class="circulos">
+            <li><a href="basicohtml5.html" aria-label="Conceptos básicos de HTML5"><span>Básico HTML5</span></a></li>
+            <li><a href="formhtml5.html" aria-label="Formularios en HTML5"><span>Form HTML5</span></a></li>
+            <li><a href="stylehtml5.html" aria-label="Estilos en HTML5"><span>Style HTML5</span></a></li>
+            <li><a href="#" aria-label="Página de contacto"><span>Contacto</span></a></li>
+        </ul>
+    </nav>
+    
+    <main role="main">
+        <section>
+            <h2>Contenido principal</h2>
+            <p>Aquí iría el contenido principal de tu página web.</p>
+        </section>
+    </main>
+    
+    <footer role="contentinfo">
+        <p>&copy; 2023 Menú Circular HTML5. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
